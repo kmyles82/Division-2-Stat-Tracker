@@ -1,26 +1,28 @@
 <template>
-  <div id="app">
-    Hello
+  <div class="container">
+    <Header/>
+    <router-view/>
   </div>
 </template>
 
 <script>
+// import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header'
+import Search from './components/Search'
 
 export default {
   name: 'app',
-  data() {
-    return {
-      
-    }
-  },
   components: {
+    // HelloWorld,
+    Header,
+    Search
   }
 }
 </script>
 
 <style>
 :root {
-  --primary-color:  #f66913;
+  --primary-color: #ffffff;
 }
 * {
   box-sizing: border-box;
@@ -28,7 +30,7 @@ export default {
   padding: 0;
 }
 body {
-  background: var(--primary-color);
+  /* background: url(./assets/bg.jpg); */
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   line-height: 1.6;
@@ -44,7 +46,7 @@ ul {
   background: var(--primary-color);
 }
 .body-bg-image {
-  background: var(--primary-color) url("./assets/shun.png") no-repeat top
+  background: url(./assets/shun.png) no-repeat top
     center;
 }
 .container {
