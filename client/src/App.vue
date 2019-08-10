@@ -22,7 +22,7 @@ export default {
 
 <style>
 :root {
-  --primary-color: #ffffff;
+  --primary-color: #f66913;
 }
 * {
   box-sizing: border-box;
@@ -43,11 +43,13 @@ ul {
   list-style: none;
 }
 .body-bg-no-image {
-  background: var(--primary-color);
-}
-.body-bg-image {
   background: url(./assets/shun.png) no-repeat top
     center;
+}
+.body-bg-image {
+  background: url(./assets/bg.jpg) no-repeat top
+    center;
+    
 }
 .container {
   max-width: 960px;
